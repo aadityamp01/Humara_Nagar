@@ -81,7 +81,7 @@
         android:id="@+id/tv_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category"
+        android:text="@string/category"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:text="*"
+        android:text="@string/asterisk"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tv_category"
@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Locality"
+        android:text="@string/locality"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -138,14 +138,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:text="*"
+        android:text="@string/asterisk"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tv_locality"
         app:layout_constraintTop_toTopOf="@+id/tv_locality" />
-
-
-<!--    dropdown https://www.youtube.com/watch?v=741l_fPKL3Y-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_locality"
@@ -177,7 +174,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Pin the Location"
+        android:text="@string/pin_the_location"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -187,7 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:text="*"
+        android:text="@string/asterisk"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tv_pin_location"
@@ -217,7 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Comments"
+        android:text="@string/comments"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -227,7 +224,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:text="*"
+        android:text="@string/asterisk"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tv_comments"
@@ -270,7 +267,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:src="@drawable/ic_add" />
+            android:src="@drawable/ic_add"
+            android:contentDescription="@string/add_image_button" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -283,7 +281,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Add image"
+                android:text="@string/add_image"
                 android:textSize="16sp"
                 android:textColor="@color/black" />
 
@@ -292,7 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Upload the image of issues"
+                android:text="@string/image_description"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -313,7 +311,8 @@
             android:id="@+id/iv_image_preview"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/sample_add_image"/>
+            android:src="@drawable/sample_add_image"
+            android:contentDescription="@string/sample_image" />
 
         <TextView
             android:id="@+id/tv_image_name"
@@ -323,7 +322,7 @@
             android:layout_marginStart="5dp"
             android:textColor="@color/black"
             android:layout_toEndOf="@id/iv_image_preview"
-            android:text="CFED79..jpeg" />
+            android:text="@string/cfed79_jpeg" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -332,7 +331,8 @@
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/tv_image_name"
             android:padding="5dp"
-            android:src="@drawable/ic_delete" />
+            android:src="@drawable/ic_delete"
+            android:contentDescription="@string/imageview_delete" />
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -345,7 +345,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="@string/submit"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         app:cornerRadius="10dp"

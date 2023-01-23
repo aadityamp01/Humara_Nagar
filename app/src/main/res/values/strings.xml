@@ -4,11 +4,17 @@
     <string name="history">History</string>
     <string name="select_category">Select Category</string>
     <string name="select_locality">Select Locality</string>
+    <string name="submit">Submit</string>
+    <string name="cfed79_jpeg">CFED79.jpeg</string>
+    <string name="sample_image">sample_image</string>
+    <string name="image_description">Upload the image of issues</string>
+    <string name="add_image">Add image</string>
+    <string name="add_image_button">Add Image Button</string>
+    <string name="asterisk">*</string>
+    <string name="comments">Comments</string>
+    <string name="pin_the_location">Pin the Location</string>
+    <string name="locality">Locality</string>
+    <string name="category">Category</string>
+    <string name="imageview_delete">imageview_delete</string>
 
-    <string-array name="categories">
-        <item>Type 1</item>
-        <item>Type 2</item>
-        <item>Type 3</item>
-        <item>Type 4</item>
-    </string-array>
 </resources>
